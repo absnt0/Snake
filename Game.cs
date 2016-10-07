@@ -16,7 +16,6 @@ namespace SnakeOOP
             Snake snake = new Snake();
             Apple apple = new Apple();
             
-
             ConsoleKey key;
             direction currentDirection = direction.none;
             apple.generateApple(snake, board);

@@ -38,18 +38,12 @@ namespace SnakeOOP
             {
                 for (int j = 0; j < WIDTH; j++)
                 {
-                    if(i % (HEIGHT - 1) == 0 || j % (WIDTH - 1) == 0)
-                    {
+                    if (i % (HEIGHT - 1) == 0 || j % (WIDTH - 1) == 0)
                         drawBuffer += "█";
-                    }
-                    else if((snakeHead.GetCoordX() == j && snakeHead.GetCoordY() == i) || (snake.CheckTail(j, i)) || (apple.appleCoord.GetCoordX() == i && apple.appleCoord.GetCoordY() == j))
-                    {
+                    else if ((snakeHead.GetCoordX() == j && snakeHead.GetCoordY() == i) || (snake.CheckTail(j, i)) || (apple.appleCoord.GetCoordX() == i && apple.appleCoord.GetCoordY() == j))
                         drawBuffer += "█";
-                    }
                     else
-                    {
                         drawBuffer += " ";
-                    }
                 }
                 drawBuffer += "\n";
             }

@@ -1,5 +1,4 @@
-﻿
-namespace SnakeOOP
+﻿namespace SnakeOOP
 {
     class Coord
     {

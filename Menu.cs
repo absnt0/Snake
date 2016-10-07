@@ -51,7 +51,6 @@ namespace SnakeOOP
 
                 Console.SetCursorPosition(0, 10);
                 Thread.Sleep(10);
-                
                 DrawHeading();
             
 
@@ -83,12 +82,9 @@ namespace SnakeOOP
                 new String[] { "Monochrome", "Doogie Howser", "Metro", "Forest", "Nuke", "Bloody" },  // Color theme configuration options
                 new String[] { "Don't kill me", "Bring it on", "Nightmare" } // Difficulty options
             };
-            int settingsCurrentPosition = 0;
-            
+            int settingsCurrentPosition = 0;    
             int submenuCurrentOption = 0;
-
             Console.Clear();
-
 
             while (true)
             {
@@ -143,8 +139,6 @@ namespace SnakeOOP
                         case "Enter":
                             if (settingsCurrentPosition == 2)
                             {
-                                
-
                                 switch (difficultyCurrentOption)
                                 {
                                     case 0: // Don't kill me
@@ -197,7 +191,6 @@ namespace SnakeOOP
                         Console.BackgroundColor = defaultConsoleBackground;
                         Console.ForegroundColor = defaultConsoleForeground;
                     }
-
                     else
                         Console.WriteLine(settings[i]);
                 }
